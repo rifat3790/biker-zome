@@ -10,9 +10,19 @@
 <!-- Font awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+<!-- Google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  .font-poppins{
+    font-family: 'Poppins', sans-serif;
+  }
+</style>
+
 </head>
-<body>
-    <header class="bg-[#264653] min-h-screen">
+<body class="font-poppins">
+    <header class="bg-[#264653] min-w-full lg:min-h-screen">
         <nav>
             <div class="navbar text-white">
                 <div class="navbar-start">
@@ -22,7 +32,7 @@
                   <!-- Dropdown ends -->
                 
                 </div>
-                <div class="navbar-center lg:ml-[50%] lg:mt-11 hidden lg:flex ">
+                <div class="navbar-center lg:ml-[50%] lg:mt-11 md:ml-[30%] md:mt-11 hidden lg:flex md:flex">
                  <div>
                     <ul class="menu menu-horizontal px-1 ">
                         <li><a>Home</a></li>
@@ -32,13 +42,13 @@
                       </ul>
                  </div>
                   <div>
-                    <a class="btn bg-[#E76F51] text-white p-4 ml-24 border-none">Button</a>
+                    <a class="btn bg-[#E76F51] text-white p-4 md:ml-16 lg:ml-24 border-none">Button</a>
                   </div>
                 </div>
                 <div class="navbar-end">
                   
                   <div class="dropdown relative text-black">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost md:hidden lg:hidden">
                         <i class="fa-solid fa-align-justify text-white"></i>
                     </label>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0">
@@ -53,11 +63,37 @@
                 
               </div>
         </nav>
+        <div class="banner-container lg:mt-20">
+          <div class="hero">
+            <div class="hero-content flex-col lg:flex-row-reverse md:flex-row-reverse justify-center md:py-10 ">
+              <div class="">
+                <img src="images/slider/bike3.png" class="max-w-sm rounded-lg shadow-2xl lg:ml-14" />
+              </div>
+              <div class="text-white md:w-96 lg:w-[480px]">
+                <p class="text-[14px]">Computer-controlled digital transistorized with electronic advance</p>
+                <h1 class="text-5xl">Honda CBR 300R</h1>
+                <p class="py-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <button class="btn bg-[#E76F51] border-none text-white">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
     </header>
 
-    <main>
+    <main class="container mx-auto">
+
+      <!-- Featured bike section -->
         <section>
-            
+            <div class="text-center mt-16">
+              <h1 class="text-5xl">Fetured Bikes In This Year</h1>
+            <p class="text-[14px] text-[#E76F51]">Best bike collection</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-28 gap-28">
+              <img src="images/others/feature-bike.png" alt="">
+              <img src="images/others/feature-bike.png" alt="">
+              <img src="images/others/feature-bike.png" alt="">
+            </div>
         </section>
     </main>
 </body>
